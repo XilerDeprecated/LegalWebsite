@@ -6,7 +6,7 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Switch,
     Redirect
@@ -19,7 +19,7 @@ import TermsOfService from './pages/ToS';
 class App extends React.Component {
     render() {
         return (
-            <Router>
+            <Router basename="/">
                 <Switch>
                     <Route exact path="/license" component={License} />
                     <Route exact path="/tos" component={TermsOfService} />
