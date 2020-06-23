@@ -36,7 +36,8 @@ class Header extends React.Component {
                         url="#"
                         height="184px"
                         data={[
-                            { name: "Forums", url: "#", target: "_self" },
+                            { name: "Forums", url: "#", target: "_self" }, 
+                            { name: "Servers", url: "#", target: "_self" },
                             { name: "Discord", url: "https://dc.xiler.net", target: "_blanc" }
                         ]}
                     />
