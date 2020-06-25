@@ -5,50 +5,53 @@
 */
 
 :root {
-    --text-color: rgb(220, 220, 221); 
-    --text-color-second: rgb(197, 195, 198);
-    --accent-color: rgb(25, 133, 161);
-    --accent-color-light: rgb(43, 186, 222);
-    --background-color: rgb(70, 73, 76);
-    --background-color-darker: rgb(49, 51, 53);
+  --text-color: rgb(220, 220, 221);
+  --text-color-second: rgb(197, 195, 198);
+  --accent-color: rgb(25, 133, 161);
+  --accent-color-light: rgb(43, 186, 222);
+  --background-color: rgb(70, 73, 76);
+  --background-color-darker: rgb(49, 51, 53);
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
 #LicenseText {
-    width: calc(100vw - 160px);
-    max-width: 1000px;
-    margin: 0 auto;
-    color: var(--text-color);
+  width: calc(100vw - 160px);
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--text-color);
 }
 
 #LicenseText ol li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 #LicenseText ol li ol li {
-    margin: 0;
+  margin: 0;
 }
 
-#LicenseText ol li h3, #LicenseText ol li p {
-    margin: 0;
+#LicenseText ol li h3,
+#LicenseText ol li p {
+  margin: 0;
 }
 
 #LicenseText ol li a {
-    color: var(--accent-color);
-    transition: color 0.1s ease-in-out;
+  color: var(--accent-color);
+  transition: color 0.1s ease-in-out;
 }
 
 #LicenseText ol li a:hover {
-    color: var(--accent-color-light);
+  color: var(--accent-color-light);
 }
 
-#TextContent {
+@media (max-width: 950px) {
+  #TextContent {
     position: absolute;
     top: 80px;
+  }
 }
