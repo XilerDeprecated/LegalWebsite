@@ -7,6 +7,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import TextContent from '../components/TextContent';
+import Footer from '../components/Footer';
 
 function TermsOfService() {
     return (
@@ -136,6 +137,7 @@ function TermsOfService() {
                     </div>
                 }
             />
+            <Footer />
         </div>
     );
 }

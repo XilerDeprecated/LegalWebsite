@@ -7,7 +7,7 @@
   "display": "standalone",
   "theme_color": "#1985A1",
   "background_color": "#46494C",
-  "orientation": "landscape-primary",
+  "orientation": "natural",
   "categories": ["legal", "tos", "terms of service", "license"],
   "icons": [
     {
