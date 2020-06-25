@@ -208,6 +208,7 @@ header ul li a:hover {
   header img,
   header button,
   #headerKeeperMobile {
+    top: 0;
     position: absolute;
     z-index: 10000 !important;
   }
