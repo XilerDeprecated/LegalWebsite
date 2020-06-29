@@ -12,14 +12,14 @@ footer {
   /* position: absolute; */
   position: static;
   /* top: calc(100% - 250px); */
-  bottom: 0;
+  /* bottom: 0; */
   height: 250px;
   background-color: var(--footer-background-color);
   color: var(--text-color);
 }
 
 #copyright {
-    position: static;
+  position: static;
   height: 20px;
   /* width: 100vw; */
   /* position: absolute; */
@@ -27,7 +27,9 @@ footer {
 }
 
 #copyright-container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  position: absolute;
+  left: calc(50vw - (179.88px / 2));
   height: 20px;
 }
 
@@ -101,4 +103,19 @@ footer {
 .website-theme:hover {
   cursor: pointer;
   background-color: var(--accent-color-light);
+}
+
+@media (max-width: 850px) {
+  footer {
+    height: 450px;
+  }
+
+  #footer-container {
+    height: 400px;
+  }
+
+  .footer-section {
+    width: calc(50vw - 60px);
+    margin: 0;
+  }
 }

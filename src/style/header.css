@@ -197,10 +197,8 @@ header ul li a:hover {
     position: fixed !important;
   }
 
-  header,
-  #headerKeeperMobile,
-  #TextContent {
-    width: calc(100vw - 20px) !important;
+  #headerKeeperMobile {
+    width: 100vw !important;
   }
 
   #TextContent #LicenseText {
