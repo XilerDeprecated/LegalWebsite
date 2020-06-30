@@ -5,11 +5,14 @@
 */
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 class HoverSection extends React.Component {
   render() {
-      return (
-        <div id={this.props.id} className="hoverSection">
-          {this.props.data.map((item) => (
+    return (
+      <div id={this.props.id} className="hoverSection">
+        {this.props.data.map((item) => {
+          return !item.route ? (
             <a
               key={this.props.data.indexOf(item)}
               href={item.url}
@@ -18,9 +21,18 @@ class HoverSection extends React.Component {
             >
               {item.name}
             </a>
-          ))}
-        </div>
-      );
+          ) : (
+            <Link
+              key={this.props.data.indexOf(item)}
+              to={item.url}
+              alt={`Url for ${item.name}!`}
+            >
+              {item.name}
+            </Link>
+          );
+        })}
+      </div>
+    );
   }
 }
 
