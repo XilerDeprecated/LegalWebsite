@@ -50,8 +50,8 @@ class Footer extends React.Component {
           <FooterSection
             title="extra's"
             items={[
-              <a href="https://legal.xiler.net/ToS">Terms of Service</a>,
-              <a href="https://legal.xiler.net/License">License</a>,
+              <Link to="/ToS">Terms of Service</Link>,
+              <Link to="/License">License</Link>,
               <button
                 onClick={this.changeTheme}
                 className={`website-theme ${
