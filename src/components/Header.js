@@ -48,7 +48,11 @@ class Header extends React.Component {
             height="310px"
             data={[
               { name: "Websites", url: "services/websites", route: true },
-              { name: "Minecraft Servers", url: "services/minecraft", route: true },
+              {
+                name: "Minecraft Servers",
+                url: "services/minecraft",
+                route: true,
+              },
               { name: "CS:GO Servers", url: "services/cs", route: true },
               { name: "Discord Bots", url: "services/discord", route: true },
             ]}
@@ -59,14 +63,20 @@ class Header extends React.Component {
             url="#"
             height="184px"
             data={[
-              { name: "Forums", url: "https://forum.xiler.net/", target: "_self", route: false },
+              {
+                name: "Forums",
+                url: "https://forum.xiler.net/",
+                target: "_self",
+                route: false,
+              },
               { name: "Servers", url: "community/servers", route: true },
               {
                 name: "Discord",
                 url: "https://dc.xiler.net",
                 target: "_blanc",
-                route: false
+                route: false,
               },
+              { name: "Discord Bot", url: "community/dc", route: true },
             ]}
           />
           <li>
