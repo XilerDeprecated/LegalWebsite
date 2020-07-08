@@ -47,14 +47,14 @@ class Header extends React.Component {
             url="#"
             height="310px"
             data={[
-              { name: "Websites", url: "services/websites", route: true },
+              { name: "Websites", url: "https://www.xiler.net/services/websites", route: false },
               {
                 name: "Minecraft Servers",
-                url: "services/minecraft",
-                route: true,
+                url: "https://www.xiler.net/services/minecraft",
+                route: false,
               },
-              { name: "CS:GO Servers", url: "services/cs", route: true },
-              { name: "Discord Bots", url: "services/discord", route: true },
+              { name: "CS:GO Servers", url: "https://www.xiler.net/services/cs", route: false },
+              { name: "Discord Bots", url: "https://www.xiler.net/services/discord", route: false },
             ]}
           />
           <HeaderUrl
@@ -69,14 +69,14 @@ class Header extends React.Component {
                 target: "_self",
                 route: false,
               },
-              { name: "Servers", url: "community/servers", route: true },
+              { name: "Servers", url: "https://www.xiler.net/community/servers", route: false },
               {
                 name: "Discord",
                 url: "https://dc.xiler.net",
                 target: "_blanc",
                 route: false,
               },
-              { name: "Discord Bot", url: "community/dc", route: true },
+              { name: "Discord Bot", url: "https://www.xiler.net/community/dc", route: false },
             ]}
           />
           <li>

@@ -33,18 +33,19 @@ class Footer extends React.Component {
           <FooterSection
             title="services"
             items={[
-              <Link to="services/websites">Websites</Link>,
-              <Link to="services/minecraft">Minecraft Servers</Link>,
-              <Link to="services/cs">CS:GO Servers</Link>,
-              <Link to="services/discord">Discord Bots</Link>,
+              <a href="https://www.xiler.net/services/websites">Websites</a>,
+              <a href="https://www.xiler.net/services/minecraft">Minecraft Servers</a>,
+              <a href="https://www.xiler.net/services/cs">CS:GO Servers</a>,
+              <a href="https://www.xiler.net/services/discord">Discord Bots</a>,
             ]}
           />
           <FooterSection
             title="community"
             items={[
               <a href="https://forum.xiler.net/">Forums</a>,
-              <Link to="community/servers">Servers</Link>,
+              <a href="https://www.xiler.net/community/servers">Servers</a>,
               <a href="https://dc.xiler.net">Discord</a>,
+              <a href="https://www.xiler.net/community/discord">Discord Bot</a>,
             ]}
           />
           <FooterSection
@@ -65,7 +66,7 @@ class Footer extends React.Component {
         </div>
         <div id="copyright">
           <div id="copyright-container">
-            <img src="./assets/logo-64x.png" alt="Copyright icon" />
+            <img src="/assets/logo-64x.png" alt="Copyright icon" />
             <p>Copyright ©{new Date().getFullYear()}</p>
             <p>Xiler</p>
           </div>
