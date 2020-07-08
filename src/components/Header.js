@@ -76,7 +76,7 @@ class Header extends React.Component {
                 target: "_blanc",
                 route: false,
               },
-              { name: "Discord Bot", url: "https://www.xiler.net/community/dc", route: false },
+              { name: "Discord Bot", url: "https://www.xiler.net/community/discord", route: false },
             ]}
           />
           <li>
