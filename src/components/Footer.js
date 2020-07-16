@@ -21,7 +21,7 @@ class Footer extends React.Component {
   render() {
     this.updateTheme();
     return (
-      <footer>
+      <footer itemScope>
         <div id="footer-container">
           <FooterSection
             title="contact"
@@ -33,26 +33,26 @@ class Footer extends React.Component {
           <FooterSection
             title="services"
             items={[
-              <a href="https://www.xiler.net/services/websites">Websites</a>,
-              <a href="https://www.xiler.net/services/minecraft">Minecraft Servers</a>,
-              <a href="https://www.xiler.net/services/cs">CS:GO Servers</a>,
-              <a href="https://www.xiler.net/services/discord">Discord Bots</a>,
+              <Link to="/services/websites">Websites</Link>,
+              <Link to="/services/minecraft">Minecraft Servers</Link>,
+              <Link to="/services/cs">CS:GO Servers</Link>,
+              <Link to="/services/discord">Discord Bots</Link>,
             ]}
           />
           <FooterSection
             title="community"
             items={[
               <a href="https://forum.xiler.net/">Forums</a>,
-              <a href="https://www.xiler.net/community/servers">Servers</a>,
+              <Link to="/community/servers">Servers</Link>,
               <a href="https://dc.xiler.net">Discord</a>,
-              <a href="https://www.xiler.net/community/discord">Discord Bot</a>,
+              <Link to="/community/discord">Discord Bot</Link>,
             ]}
           />
           <FooterSection
             title="extra's"
             items={[
-              <Link to="/ToS">Terms of Service</Link>,
-              <Link to="/License">License</Link>,
+              <a href="https://legal.xiler.net/ToS">Terms of Service</a>,
+              <a href="https://legal.xiler.net/License">License</a>,
               <button
                 onClick={this.changeTheme}
                 className={`website-theme ${
@@ -91,11 +91,11 @@ class Footer extends React.Component {
       this.isDarkMode() ? "rgb(220, 220, 221)" : "rgb(70, 73, 76)"
     );
     root.style.setProperty(
-      "--header-background-color",
-      this.isDarkMode() ? "rgb(39, 41, 42)" : "rgb(197, 195, 198)"
+      "--background-color-darker",
+      this.isDarkMode() ? "rgb(49, 51, 53)" : "rgb(207, 205, 208)"
     );
     root.style.setProperty(
-      "--footer-background-color",
+      "--background-color-very-dark",
       this.isDarkMode() ? "rgb(39, 41, 42)" : "rgb(197, 195, 198)"
     );
     root.style.setProperty(

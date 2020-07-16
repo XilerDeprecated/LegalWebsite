@@ -4,17 +4,14 @@
  By proceeding to this site you agree with our ToS. (View the tos here: https://legal.xiler.net/tos)
 */
 
-:root {
-  --footer-background-color: rgb(39, 41, 42);
-}
-
 footer {
   /* position: absolute; */
   position: static;
+  user-select: none;
   /* top: calc(100% - 250px); */
   /* bottom: 0; */
   height: 250px;
-  background-color: var(--footer-background-color);
+  background-color: var(--background-color-very-dark);
   color: var(--text-color);
 }
 
@@ -49,6 +46,8 @@ footer {
   width: 20px;
   height: 20px;
   float: left;
+  overflow: hidden;
+  user-select: none;
 }
 
 #footer-container {
@@ -69,7 +68,7 @@ footer {
   height: 150px;
 }
 
-.footer-section h1 {
+.footer-section h2 {
   font-size: 20px;
 }
 
@@ -77,6 +76,10 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-section ul li {
+  margin: 1px 0;
 }
 
 .footer-section ul li a {
@@ -96,7 +99,7 @@ footer {
   padding: 5px;
   border-radius: 5px;
   transition: background-color 0.05s ease-in-out;
-  color: var(--footer-background-color);
+  color: var(--background-color-very-dark);
   background-color: var(--text-color);
 }
 
