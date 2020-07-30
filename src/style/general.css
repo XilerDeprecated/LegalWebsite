@@ -21,12 +21,13 @@ body {
 }
 
 #TextContent {
-  width: calc(100vw - 20px);
+  /* width: calc(100vw - 20px); */
+  margin-top: 80px;
   margin-bottom: 60px;
 }
 
 #LicenseText {
-  width: calc(100vw - 160px);
+  /* width: calc(100vw - 160px); */
   max-width: 1000px;
   margin: 0 auto;
   color: var(--text-color);
@@ -54,8 +55,13 @@ body {
   color: var(--accent-color-light);
 }
 
+
+#TextContent #LicenseText h1 {
+  text-align: center;
+}
+
 @media (max-width: 1200px) { 
-  #TextContent {
-    margin-top: 100px;
+  #TextContent #LicenseText {
+    width: 90% !important;
   }
 }

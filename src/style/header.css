@@ -204,17 +204,12 @@ header ul li a:hover {
   }
 
   header,
-  #headerKeeperMobile,
-  #TextContent {
+  #headerKeeperMobile {
     width: 100vw !important;
   }
 
   #TextContent #LicenseText {
     width: 80%;
-  }
-
-  #TextContent #LicenseText h1 {
-    text-align: center;
   }
 
   #headerKeeperMobile {
