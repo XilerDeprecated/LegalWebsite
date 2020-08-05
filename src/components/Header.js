@@ -28,9 +28,9 @@ const Header = () => {
           <span className="hamburger-inner"></span>
         </span>
       </button>
-      <a href="/">
+      <Link to="/">
         <img id="icon" src="/assets/logo-128x.png" alt="Xiler Icon" />
-      </a>
+      </Link>
       <ul id="popout" className={popout ? "active" : ""}>
         <li>
           <Link to="/">Home</Link>
@@ -93,8 +93,9 @@ const Header = () => {
         />
         <li>
           <a href="https://buy.xiler.net/">Pricing</a>
+          {window.innerWidth > 1200 && <i className="arrow fill"></i>}
         </li>
-        <HeaderUrl
+        {/* <HeaderUrl
           name="Login"
           id="login"
           url="/login"
@@ -105,7 +106,7 @@ const Header = () => {
               route: true,
             },
           ]}
-        />
+        /> */}
       </ul>
     </header>
   );
