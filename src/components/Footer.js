@@ -5,7 +5,7 @@
 */
 import React from "react";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import FooterSection from "./utils/FooterSection";
 import "../style/footer.css";
@@ -30,7 +30,7 @@ class Footer extends React.Component {
               <a href="mailto:support@xiler.net">support@xiler.net</a>,
             ]}
           />
-          <FooterSection
+          {/* <FooterSection
             title="services"
             items={[
               <Link to="/services/websites">Websites</Link>,
@@ -38,14 +38,14 @@ class Footer extends React.Component {
               <Link to="/services/cs">CS:GO Servers</Link>,
               <Link to="/services/discord">Discord Bots</Link>,
             ]}
-          />
+          /> */}
           <FooterSection
             title="community"
             items={[
               <a href="https://forum.xiler.net/">Forums</a>,
-              <Link to="/community/servers">Servers</Link>,
+              // <Link to="/community/servers">Servers</Link>,
               <a href="https://dc.xiler.net">Discord</a>,
-              <Link to="/community/discord">Discord Bot</Link>,
+              // <Link to="/community/discord">Discord Bot</Link>,
             ]}
           />
           <FooterSection

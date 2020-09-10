@@ -23,7 +23,7 @@ class App extends React.Component {
                 <Switch>
                     <Route exact path="/license" component={License} />
                     <Route exact path="/tos" component={TermsOfService} />
-                    <Route exact path='/' component={() => { window.location.href = 'https://prototype.xiler.net'; return null;  }} />
+                    <Route exact path='/' component={() => { window.location.href = 'https://xiler.net'; return null;  }} />
                     <Redirect to="/" />
                 </Switch>
             </Router>

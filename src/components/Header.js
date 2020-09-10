@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../style/header.css";
 
-import HeaderUrl from "./utils/HeaderUrl";
+// import HeaderUrl from "./utils/HeaderUrl";
 
 const Header = () => {
   const [hamburger, setHamburger] = useState(false);
@@ -35,7 +35,7 @@ const Header = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <HeaderUrl
+        {/* <HeaderUrl
           name="Services"
           id="li-services"
           url="/services/"
@@ -94,7 +94,7 @@ const Header = () => {
         <li>
           <a href="https://buy.xiler.net/">Pricing</a>
           {window.innerWidth > 1200 && <i className="arrow fill"></i>}
-        </li>
+        </li> */}
         {/* <HeaderUrl
           name="Login"
           id="login"
